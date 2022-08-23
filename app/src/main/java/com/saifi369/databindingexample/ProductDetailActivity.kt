@@ -14,7 +14,7 @@ class ProductDetailActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putParcelable("product", product)
 
-        val fragment = MainFragment()
+        val fragment = ProductDetailFragment()
         fragment.arguments = bundle
 
         supportFragmentManager.beginTransaction()
