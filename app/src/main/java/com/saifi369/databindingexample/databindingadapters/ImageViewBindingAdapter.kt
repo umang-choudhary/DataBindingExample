@@ -32,7 +32,7 @@ fun loadImageFromInternet(view: ImageView, imageUrl: String, placeholderImage: B
         requestOptions.placeholder(R.drawable.clothes_placeholder)
 
     if (errorImage)
-        requestOptions.placeholder(R.drawable.error_image)
+        requestOptions.error(R.drawable.error_image)
 
     Glide.with(view.context)
             .setDefaultRequestOptions(requestOptions)
